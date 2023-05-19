@@ -8,7 +8,7 @@ import Head from 'next/head'
 
 
 const product = ({ burger }) => {
-const [price, setPrice] = useState(burger.sizesOption[0].price);
+  const [price, setPrice] = useState(burger.sizesOption[0].price);
   if (typeof document !== 'undefined') {
     function hideEmptyDiv() {
       const div = document.querySelector('.my-div');
