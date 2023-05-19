@@ -6,7 +6,7 @@ import Landing from '@/components/Landinglatest';
 import List from '@/components/Listlatest';
 import Location from '@/components/Locationlatest';
 import axios from "axios";
-import orderDetail from "@/components/orderDetaillatest"
+import orderDetail from "@/components/OrderDetaillatest"
 import { useState } from 'react';
 import Add from '@/components/Addlatest';
 import AddButton from '@/components/AddButtonlatest';
