@@ -30,7 +30,7 @@ export default function Home({list, admin}) {
       <List list={list} />
       {!close && <Add setClose={setClose}/> }
       <Location />
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      {/* <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> */}
       <script>
   AOS.init();
 </script>
