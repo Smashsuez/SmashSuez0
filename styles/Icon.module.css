@@ -1,0 +1,9 @@
+.icons{
+    margin-top: 13px;
+}
+.icon{
+    color:#1f285c;
+    margin: 0 7px;
+    cursor:pointer;
+    width: 30px;
+}

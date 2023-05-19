@@ -1,0 +1,165 @@
+.container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 150vh;
+    height:fit-content;
+    background-color: rgb(249 211 197 / 58%);
+    padding-top: 125px;
+  }
+  .item {
+    width: 100%;
+    display :block;
+  }
+  
+  .title{
+    color:rgb(249, 93, 37);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .imgTd{
+    display:flex;
+    justify-content:center;
+}
+
+.tr {
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+
+.imgContainer {
+  width: 70px;
+  height: 50px;
+  position: relative;
+}
+
+table.orders-table tbody tr {
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+
+.img{
+    overflow:visible;
+}
+
+  
+  .table {
+    width: 100%;
+    border-spacing: 20px;
+    text-align: left;
+  }
+  
+  .button{
+    cursor:pointer;
+    position:fixed;
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    transition:  0.6s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.button::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    right: -30px;
+    top: 50%;
+    transform: translatey(-50%);
+}
+.button::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    left: -30px;
+    top: 50%;
+    transform: translatey(-50%);
+}
+.button:hover::after {
+    z-index: -1;
+    animation: leftMove 0.5s linear forwards;
+}
+.button:hover::before {
+    z-index: -1;
+    animation: rightMove 0.5s linear forwards;
+}
+.button:hover {
+    color: coral;
+    border: 2px solid white ;
+    transition-delay: 0.5s
+}
+@media screen and (max-width: 770px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 140px;
+    align-items: center;
+  } 
+
+  .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trTitle {
+    display: none;
+  }
+
+  .tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .imgTd{
+      display:flex;
+      justify-content:center;
+  }
+  
+  .imgContainer {
+    width: 70px;
+    height: 50px;
+    
+  }
+  
+  .img{
+      overflow:visible;
+      position: relative;
+  }
+
+  .imgContainer {
+    width: 40vw;
+    height: 30vw;
+    position: relative;
+  }
+
+  .name,
+  .total {
+    font-size: 24px;
+  }
+
+  .extras,
+  .price,
+  .quantity {
+    font-size: 22px;
+  }
+
+
+}
+
+

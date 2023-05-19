@@ -1,0 +1,179 @@
+.container{
+    padding: 50px;
+    padding-top: 200px;
+    min-height: 96vh;
+    width:100%;
+    display:flex;
+    background-color: rgb(249 211 197 / 58%);
+}
+
+.left{
+    flex:2;
+    text-align:center;
+}
+
+.right{
+    flex:1
+}
+
+.productName {
+    text-align:center;
+}
+
+.table{
+    width: 100%;
+    border-spacing: 20px;
+}
+
+.imgTd{
+    display:flex;
+    justify-content:center;
+}
+
+.imgContainer {
+  width: 70px;
+  height: 50px;
+  position: relative;
+}
+
+.img{
+    overflow:visible;
+}
+
+.name{
+    font-weight: 500;
+    color:#d1411e;
+    font-size: 18px;
+}
+
+.total{
+    font-weight: 500;
+    font-size:18px; 
+}
+
+.wrapper{
+    width: 90%;
+    max-height:300px;
+    background-color:#d1411e;
+    padding: 10px 50px;
+    display:flex;
+    flex-direction: column;
+    color:aliceblue;
+    border-radius: 7px;
+    min-width: 270px;
+    max-width:330px;
+}
+
+.totalTextTitle{
+    margin-right: 10px;
+}
+
+.button{
+    height: 30px;
+    color:#d1411e;
+    font-weight:bold;
+    border:#d1411e;
+    text-align:center;
+    margin-top: 20px;
+    border-radius: 10px;
+    min-width:fit-content;
+}
+
+.removeButton{
+    background-color:#d1411e;
+    border-radius: 10px;
+    padding:5px;
+    color:aliceblue;
+    border:none
+}
+@media screen and (max-width: 770px) {
+    .container {
+      flex-direction: column;
+      padding: 20px;
+      padding-top: 140px;
+      align-items: center;
+    }
+  
+    .table {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .trTitle {
+      display: none;
+    }
+  
+    .tr {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .imgTd{
+        display:flex;
+        justify-content:center;
+    }
+    
+    .imgContainer {
+      width: 70px;
+      height: 50px;
+      
+    }
+    
+    .img{
+        overflow:visible;
+        position: relative;
+    }
+  
+    .imgContainer {
+      width: 40vw;
+      height: 30vw;
+      position: relative;
+    }
+  
+    .name,
+    .total {
+      font-size: 24px;
+    }
+  
+    .extras,
+    .price,
+    .quantity {
+      font-size: 22px;
+    }
+  
+    .price::before {
+      content: "Price: ";
+      font-weight: 500;
+    }
+    .quantity::before {
+      content: "Quantity: ";
+      font-weight: 500;
+    }
+    .total::before {
+      content: "Total: ";
+      font-weight: 500;
+    }
+  
+    .wrapper {
+      width: 100%;
+    }
+  }
+  
+  .paymentMethods {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .payButton {
+    padding: 10px 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background-color: white;
+    color: teal;
+    font-weight: bold;
+  }

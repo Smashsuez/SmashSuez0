@@ -1,0 +1,23 @@
+.container{
+    background-color: rgb(249 211 197 / 58%);
+    height:100%;
+}
+
+.mainAddButton{
+    padding: 10px;
+    margin:20px;
+    border-bottom-right-radius: 6px;
+    background-color: rgb(249, 93, 37);
+    color: #fff;
+    font-weight: 500;
+    text-align:center;
+    cursor:pointer;
+    width:fit-content;
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border:none;
+    
+}

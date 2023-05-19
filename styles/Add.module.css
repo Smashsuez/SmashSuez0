@@ -1,0 +1,116 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(245, 240, 240, .52);
+    position:fixed;
+    top: 0;
+    z-index:999;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.wrapper{
+    height:fit-content;
+    width:450px;
+    background-color:aliceblue;
+    padding: 10px 30px;
+    border-radius: 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    position:relative;
+}
+
+.close{
+    position:absolute;
+    width:30px;
+    height:30px;
+    background-color:rgb(249, 93, 37);
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    top:-10px;
+    right:-10px;
+    cursor:pointer;
+}
+
+.item{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:10px;
+}
+
+.label{
+    margin-bottom:5px;
+    font-size:14px;
+    font-weight:500;
+}
+
+.input{ 
+    border:1px solid gray;
+    outline-color: coral;
+    border-radius:7px;
+    padding-left:10px;
+}
+
+.inputSm{
+    width: 25%;
+}
+
+.size,
+.extra{
+    display:flex;
+    justify-content:space-between;
+}
+
+.sizeItems,
+.extraItems{
+    display:flex;
+    margin: 10px 0px;
+    flex-wrap:wrap;
+    margin-top: 20px;
+}
+
+.sizeItem,
+.extraItem{
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid coral;
+    background-color:#fff;
+    color:coral;
+    margin-right:10px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.mainAddButton{
+    padding: 10px;
+    margin:20px;
+    border-bottom-right-radius: 6px;
+    background-color: rgb(249, 93, 37);
+    color: #fff;
+    font-weight: 500;
+    text-align:center;
+    cursor:pointer;
+    width:fit-content;
+    margin:0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    border:none;
+}
+
+ .addButton {
+  width: 25%;
+  border: none;
+  background-color: rgb(249, 93, 37);
+  border-radius:10px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px 0;
+  align-self: flex-end;
+} 

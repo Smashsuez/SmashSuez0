@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+.container{
+    background-color: #1f285c;
+    height: 100px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    color: #EEE;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0px 14px 20px 3px #000000ba;;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    
+}
+.container.active{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: -60px;
+    left: 0;
+    right: 0;
+    border-radius: 25px;
+    z-index: 990;
+    box-shadow: 0 3px 16px 0 rgb(0, 0, 0 / 10%) ;
+    background-color: #1f285c;
+    transform: translateY(70px);
+    transition: transform 1s ease;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+}
+
+.item:nth-last-child{
+    justify-content: flex-end;
+}
+
+.list{
+    padding: 0px 105px 0px 0px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+    margin:0;
+}
+
+.listItem{
+    text-decoration:underline black;
+    position: relative;
+    overflow:hidden;
+    padding-bottom: 5px;
+    margin: 0 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color:aliceblue;
+    cursor:pointer;
+    transition: 0.6s;
+}
+
+.listItem:hover{
+    color: coral;
+}
+
+.cart{
+    position: relative;
+}
+.counter{
+    position: absolute;
+    top: -14px; 
+    right: -10px;
+    border-radius: 50%;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bolder;
+    color: coral;
+}
+
+.listItem::before{
+    content: "";
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: coral;
+    bottom: 0;
+    left: -100%;
+    transition: 0.6s;
+}
+
+.listItem:hover::before{
+    left: 0;
+}
+@media screen and (max-width: 768px) {
+    .container {
+      height: 100px;
+      padding: 0 20px;
+      overflow:hidden;
+    }
+    .logo {
+      width: 80px;
+    }
+    .list {
+      display: none;
+    }
+    .cart {
+      margin-left: auto;
+    }
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .container {
+      height: 100px;
+      padding: 0 50px;
+     
+    }
+    .logo {
+      width: 120px;
+    }
+    .list {
+      display: flex;
+    }
+    .cart {
+      margin-left: 20px;
+    }
+    .menu-icon {
+      display: none;
+    }
+  }
+  
