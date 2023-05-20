@@ -69,7 +69,7 @@ const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash
           <input type="hidden" name="order_extra" value={extra} />
           <input type="hidden" name="order_title" value={title} />
           <input type="hidden" name="order_size" value={size} />
-          <button type="submit" className={styles.button}>
+          <button type="submit" className={styles.button} >
             Order
           </button>
         </form>
