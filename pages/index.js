@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
+import Head from 'next/head';
+import { Inter } from 'next/font/google';
 import Landing from '../components/Landing';
 import List from '../components/List';
 import Location from '../components/Location';
