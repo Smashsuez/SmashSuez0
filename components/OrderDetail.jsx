@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "../styles/orderDetail.module.css";
 import emailjs from '@emailjs/browser';
 
-const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash }) => {
+const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash, }) => {
   const [customer, setCustomer] = useState("");  
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
@@ -16,7 +16,7 @@ const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash
       e.target,
       'Ro_eFq8rhrK6vhPck' // Replace with your user ID
     ).then((result) => {
-        console.log(result)
+        console.log(result.text);
       }, (error) => {
         console.log(error.text);
       });
