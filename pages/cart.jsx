@@ -22,7 +22,7 @@ const Cart = () =>{
       const res = await axios.post("https://smash-suez0.vercel.app/api/orders", data);
       if (res.status === 201) {
         dispatch(reset());
-        router.push(`/orders/${res.data._id}`);
+        router.push(`https://smash-suez0.vercel.app/orders/${res.data._id}`);
         console.log(data)
       }
     } catch (err) {
