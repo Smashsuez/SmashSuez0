@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import Landing from '@/components/Landinglatest';
-import List from '@/components/Listlatest';
-import Location from '@/components/Locationlatest';
+import Landing from '../components/Landing';
+import List from '../components/List.jsx';
+import Location from '../components/Location.jsx';
 import axios from "axios";
 import { useState } from 'react';
-import Add from '@/components/Addlatest';
-import AddButton from '@/components/AddButtonlatest';
+import Add from '../components/Add';
+import AddButton from '../components/AddButton';
 
 
 
