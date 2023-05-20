@@ -41,7 +41,7 @@ const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash
             />
           </div>
           <div className={styles.item}>
-            <label className={styles.label}>Phone Number</label>
+            <label className={styles.label}>Phone Number</label >
             <input
               type="text"
               placeholder="Phone Number"
