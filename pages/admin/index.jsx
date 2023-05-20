@@ -11,8 +11,8 @@ const Index = ({ orders, products }) => {
   const [ordersList, setOrdersList] = useState(orders);
   const handleDeleteOrders = async (orderId) => {
     try {
-      await axios.delete(`http://localhost:3000/api/orders/${orderId}`);
-      const newOrdersRes = await axios.get("http://localhost:3000/api/orders");
+      await axios.delete(`https://smash-suez0.vercel.app/api/orders/${orderId}`);
+      const newOrdersRes = await axios.get("https://smash-suez0.vercel.app/api/orders");
       setOrdersList(newOrdersRes.data); // update the orders list with the new data
     } catch (error) {
       console.error(error);
@@ -138,8 +138,8 @@ export const getServerSideProps = async (ctx) => {
       },
     };
   }
-  const productRes = await axios.get("http://localhost:3000/api/products");
-  const orderRes = await axios.get("http://localhost:3000/api/orders");
+  const productRes = await axios.get("https://smash-suez0.vercel.app/api/products");
+  const orderRes = await axios.get("https://smash-suez0.vercel.app/api/orders");
   return {
     props:{
       orders: orderRes.data,
