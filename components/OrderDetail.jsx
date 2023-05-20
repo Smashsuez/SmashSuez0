@@ -16,7 +16,7 @@ const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash
       e.target,
       'Ro_eFq8rhrK6vhPck' // Replace with your user ID
     ).then((result) => {
-        console.log(result.text);
+        
       }, (error) => {
         console.log(error.text);
       });
@@ -69,7 +69,7 @@ const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash
           <input type="hidden" name="order_extra" value={extra} />
           <input type="hidden" name="order_title" value={title} />
           <input type="hidden" name="order_size" value={size} />
-          <button type="submit" className={styles.button}>
+          <button type="submit" className={styles.button} onClick={handleClick}>
             Order
           </button>
         </form>
