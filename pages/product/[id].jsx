@@ -7,7 +7,7 @@ import { addProduct } from '@/redux/cartSlicelatest';
 import Head from 'next/head'
 
 
-const product = ({ burger }) => {
+const Product = ({ burger }) => {
   const [price, setPrice] = useState(burger.sizesOption[0].price);
   if (typeof document !== 'undefined') {
     function hideEmptyDiv() {
@@ -167,4 +167,4 @@ export const getServerSideProps = async ({params}) =>{
   }
   
 
-export default product
+export default Product
