@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from '../styles/Cart.module.css';
 import Image from 'next/legacy/image';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeProduct, reset } from '../redux/cartSlice';
+import { removeProduct, updateCart, reset } from '../redux/cartSlice';
 import axios from 'axios';
 import { useRouter } from "next/router";
 import OrderDetail from "../components/OrderDetail";
@@ -19,7 +19,7 @@ const Cart = () =>{
 
   const createOrder = async (data) => {
     try {
-      const res = await axios.post("https://smash-suez0.vercel.app/api/orders", data);
+      const res = await axios.post("https://smash-suez0-todb.vercel.app/api/orders", data);
       if (res.status === 201) {
         dispatch(reset());
         router.push(`/orders/${res.data._id}`);

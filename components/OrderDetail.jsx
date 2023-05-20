@@ -21,7 +21,7 @@ const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash
         console.log(error.text);
       });
 
-    createOrder({ customer, address, total, phone, quantity, extra, title, size });
+    createOrder({ customer, address, phone });
   };
 
   return (
