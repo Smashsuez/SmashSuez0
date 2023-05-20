@@ -78,4 +78,4 @@ const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash
   );
 };
 
-export default OrderDetail
+export default OrderDetail;
