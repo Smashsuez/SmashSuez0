@@ -1,4 +1,4 @@
-import styles from "../../styles/Order.module.css";
+import styles from "../../styles/order.module.css";
 import Image from "next/image";
 import axios from "axios";
 import Head from 'next/head'

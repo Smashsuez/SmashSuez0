@@ -3,7 +3,7 @@ import Image from "next/legacy/image";
 import { useState, useEffect } from "react";
 import Head from 'next/head'
 
-import styles from "../../styles/Admin.module.css";
+import styles from "../../styles/admin.module.css";
 
 const Index = ({ orders, products }) => {
 
