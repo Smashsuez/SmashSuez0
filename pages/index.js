@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Landing from '@/components/Landinglatest';
 import List from '@/components/Listlatest';
 import Location from '@/components/Locationlatest';
+import OrderDetail from '@/components/OrderDetaillatest';
 import axios from "axios";
 import { useState } from 'react';
 import Add from '@/components/Addlatest';
