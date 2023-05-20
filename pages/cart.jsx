@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { removeProduct, reset } from '../redux/cartSlice';
 import axios from 'axios';
 import { useRouter } from "next/router";
-import OrderDetail from '../components/OrderDetail';
+import OrderDetail from '@/components/OrderDetaillatest';
 import Head from 'next/head'
 
 
