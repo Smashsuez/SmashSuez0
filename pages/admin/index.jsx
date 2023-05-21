@@ -9,11 +9,27 @@ const Index = ({ orders, products }) => {
 
   const [productsList, setProductsList] = useState(products);
   const [ordersList, setOrdersList] = useState(orders);
+  const fetchData = async () => {
+    try {
+      const newOrdersRes = await axios.get("https://smash-suez0.vercel.app/api/orders");
+      const newProductRes = await axios.get("https://smash-suez0.vercel.app/api/products");
+      setOrdersList(newOrdersRes.data);
+      setProductsList(newProductRes.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    const interval = setInterval(fetchData, 60000); // Refresh every 1 minute
+
+    return () => clearInterval(interval); // Clean up the interval on component unmount
+  }, []);
+
   const handleDeleteOrders = async (orderId) => {
     try {
       await axios.delete(`https://smash-suez0.vercel.app/api/orders/${orderId}`);
-      const newOrdersRes = await axios.get("https://smash-suez0.vercel.app/api/orders");
-      setOrdersList(newOrdersRes.data); // update the orders list with the new data
+      fetchData(); // Fetch updated data after deletion
     } catch (error) {
       console.error(error);
       alert("Failed to delete order");
@@ -23,8 +39,7 @@ const Index = ({ orders, products }) => {
   const handleDeleteProducts = async (orderId) => {
     try {
       await axios.delete(`https://smash-suez0.vercel.app/api/products/${orderId}`);
-      const newProductRes = await axios.get("https://smash-suez0.vercel.app/api/products");
-      setProductsList(newProductRes.data); // update the products list with the new data
+      fetchData(); // Fetch updated data after deletion
     } catch (error) {
       console.error(error);
       alert("Failed to delete products");
