@@ -97,7 +97,7 @@ const Product = ({ burger }) => {
       </Head>
       <div className={styles.left}>
         <div className={styles.imgContainer}>
-          <Image src="/imgs/3.png" layout='fill'  alt=""  />
+          <Image src={burger.img} layout='fill'  alt=""  />
         </div>
       </div>
       <div className={styles.right}>
