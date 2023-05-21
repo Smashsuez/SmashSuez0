@@ -22,8 +22,8 @@ const Index = ({ orders, products }) => {
 
   const handleDeleteProducts = async (orderId) => {
     try {
-      await axios.delete(`http://localhost:3000/api/products/${orderId}`);
-      const newProductRes = await axios.get("http://localhost:3000/api/products");
+      await axios.delete(`https://smash-suez0.vercel.app/api/products/${orderId}`);
+      const newProductRes = await axios.get("https://smash-suez0.vercel.app/api/products");
       setProductsList(newProductRes.data); // update the products list with the new data
     } catch (error) {
       console.error(error);
