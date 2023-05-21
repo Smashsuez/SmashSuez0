@@ -13,7 +13,7 @@ const Icon = () => {
     <a href="https://instagram.com/smash.suez?igshid=YmMyMTA2M2Y=">
     <FontAwesomeIcon icon={faInstagram} className={styles.icon}/>
     </a>
-    <a href="https://wa.me/qr/BCU4L4MWSF6EL1">
+    <a href="https://wa.me/201020027359">
     <FontAwesomeIcon icon={faWhatsapp}  className={styles.icon}/>
     </a>
     
