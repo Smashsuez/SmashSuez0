@@ -21,7 +21,7 @@ const Index = ({ orders, products }) => {
   };
 
   useEffect(() => {
-    const interval = setInterval(fetchData, 1000); // Refresh every 1 minute
+    const interval = setInterval(fetchData, 1000); // Refresh every 1 second
 
     return () => clearInterval(interval); // Clean up the interval on component unmount
   }, []);
