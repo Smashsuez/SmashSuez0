@@ -21,7 +21,7 @@ const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash
         console.log(error.text);
       });
 
-    createOrder({ customer, address, phone });
+      createOrder({ customer, address, total, phone, quantity, extra, title, size });
   };
 
   return (
@@ -61,14 +61,14 @@ const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash
               onChange={(e) => setAddress(e.target.value)}
             />
           </div>
-          {/* <input type="hidden" name="customer_name" value={customer} />
+          <input type="hidden" name="customer_name" value={customer} />
           <input type="hidden" name="customer_address" value={address} />
           <input type="hidden" name="customer_phone" value={phone} />
           <input type="hidden" name="order_total" value={total} />
           <input type="hidden" name="order_quantity" value={quantity} />
           <input type="hidden" name="order_extra" value={extra} />
           <input type="hidden" name="order_title" value={title} />
-          <input type="hidden" name="order_size" value={size} /> */}
+          <input type="hidden" name="order_size" value={size} />
           <button type="submit" className={styles.button} >
             Order
           </button>
