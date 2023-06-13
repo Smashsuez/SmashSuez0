@@ -6,6 +6,7 @@ import Location from '../components/Location';
 import axios from "axios";
 import { useState } from 'react';
 import Add from '../components/Add';
+import { useRouter } from 'next/router';
 import AddButton from '../components/AddButton';
 
 
@@ -14,6 +15,26 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({list, admin}) {
   const [close, setClose] = useState(true);
+  
+  const router = useRouter();
+
+useEffect(() => {
+const handleRouteChange = (url) => {
+sessionStorage.setItem(`scroll-position-${router.pathname}`, window.scrollY);
+};
+router.events.on('routeChangeStart', handleRouteChange);
+
+return () => {
+  router.events.off('routeChangeStart', handleRouteChange);
+};
+}, []);
+
+useEffect(() => {
+  const scrollPosition = sessionStorage.getItem(`scroll-position-${router.pathname}`);
+  if (scrollPosition) {
+  window.scrollTo(0, parseInt(scrollPosition));
+  }
+  }, []);
 
   return (
     <>
