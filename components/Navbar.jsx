@@ -60,7 +60,7 @@ const Navbar = () => {
       <div className={transitionNavbar ? `${styles.container} ${styles.active}` : styles.container}>
       <Link href="/" passHref>
         <div className={styles.logo}>
-          <Image src="/imgs/newLogo.png" width="120" height="90" alt=""/>
+          <Image src="/imgs/WhatsApp Image 2023-06-12 azzzzzzzzzzzzzzzzzzzzzzzt 22.50.49.png" width="120" height="90" alt=""/>
         </div></Link>
         <div className={styles.item}>
           <div className={styles.mid}>
