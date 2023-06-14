@@ -11,7 +11,7 @@ const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_30q436g', // Replace with your service ID
+      'service_voin4q9', // Replace with your service ID
       'template_5dexk3l', // Replace with your email template ID
       e.target,
       'Ro_eFq8rhrK6vhPck' // Replace with your user ID
