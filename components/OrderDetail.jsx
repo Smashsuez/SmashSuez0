@@ -16,7 +16,8 @@ const OrderDetail = ({ total, createOrder, quantity, extra, title, size, setCash
       e.target,
       'Ro_eFq8rhrK6vhPck' // Replace with your user ID
     ).then((result) => {
-        console.log(result.text);
+      dispatch(reset());
+      router.push(`/orders/${res.data._id}`);
       }, (error) => {
         console.log(error.text);
       });
