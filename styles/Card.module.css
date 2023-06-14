@@ -17,7 +17,7 @@
     margin: 20px 20px ;
     position: relative;
     cursor: pointer;
-    text-decoration:underline white;
+    text-decoration:underline aliceblue;
 }
 
 .container:hover{
