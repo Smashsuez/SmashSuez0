@@ -11,10 +11,6 @@
     font-size:small;
 }
 
-.item {
-    display:none;
-}
-
 @media screen and (max-width: 835px){
     .container{
         flex-direction:column;
