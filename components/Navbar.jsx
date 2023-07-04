@@ -28,9 +28,11 @@ const Navbar = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      return;
     } else {
       // If the element is not found, redirect to the homepage
       window.location.href = "/";
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
