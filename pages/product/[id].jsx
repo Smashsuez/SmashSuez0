@@ -45,6 +45,7 @@ const Product = ({ burger }) => {
     const optionText = option.text;
     if (optionText !== 'Cheese' && optionText !== 'D.Cheese') {
       // if the current option is not Cheese or D.cheese, return from the function
+      setExtras((prev) => [...prev, option]);
       return;
     }
   
