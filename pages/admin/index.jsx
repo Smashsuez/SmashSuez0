@@ -71,19 +71,19 @@ const Index = ({ orders, products }) => {
           <tbody>
             {productsList.map((product) => (
               <tr key={product._id} className={styles.tr}>
-                <td>
+                <td className={styles.td}>
                   <Image src={product.img} alt="" width={50} height={50} />
                 </td>
-                <td>{product._id.slice(0, 5)}...</td>
-                <td>{product.title}</td>
-                <td>
+                <td className={styles.td}>{product._id.slice(0, 5)}...</td>
+                <td className={styles.td}>{product.title}</td>
+                <td className={styles.td}>
                   {product.sizesOption.map((size) => (
                     <span key={size._id}>
                       {size.text} ({size.price}){" "}
                     </span>
                   ))}
                 </td>
-                <td>
+                <td className={styles.td}> 
                   <button className={styles.button} onClick={() => handleDeleteProducts(product._id)}>Delete</button>
                 </td>
               </tr>
