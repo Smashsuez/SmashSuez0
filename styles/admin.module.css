@@ -108,8 +108,10 @@ table.orders-table tbody tr {
     align-items: center;
   } 
 
-  #product{
-    background-color: aliceblue;
+  .product{
+    background: cornflowerblue;
+    padding: 20px;
+    border-radius: 20px;
   }
 
   .table {
