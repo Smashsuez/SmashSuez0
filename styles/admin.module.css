@@ -7,7 +7,16 @@
     background-color: rgb(249 211 197 / 58%);
     padding-top: 125px;
   }
+
   .item {
+    width: 100%;
+    display :block;
+  }
+
+  .product{
+    background: cornflowerblue;
+    padding: 20px;
+    border-radius: 20px;
     width: 100%;
     display :block;
   }
