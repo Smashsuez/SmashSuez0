@@ -36,7 +36,7 @@ const Navbar = () => {
         
       
     }else{
-      window.href = "/";
+      // window.href = "/";
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
         }
