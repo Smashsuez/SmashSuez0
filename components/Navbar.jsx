@@ -39,10 +39,8 @@ const Navbar = () => {
       window.href = "/";
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
-        
-       // wait for 1 second before attempting to scroll to the component
-    }
-  };
+        }
+  };}
   
   
 
@@ -85,6 +83,4 @@ const Navbar = () => {
     
   );
 };
-
-export default Navbar;
-
+export default Navbar
