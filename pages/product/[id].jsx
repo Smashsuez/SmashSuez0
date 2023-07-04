@@ -46,7 +46,13 @@ const Product = ({ burger }) => {
     if (optionText !== 'Cheese' && optionText !== 'D.Cheese') {
       // if the current option is not Cheese or D.cheese, return from the function
       setExtras((prev) => [...prev, option]);
-      changeprice(option.price);
+      const checked = e.target.checked;
+      if (checked){
+        changeprice(-option.price);
+      }else{
+        changeprice(option.price);
+      }
+      
       return;
     }
   
