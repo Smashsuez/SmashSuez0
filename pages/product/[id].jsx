@@ -45,15 +45,14 @@ const Product = ({ burger }) => {
     const optionText = option.text;
     if (optionText !== 'Cheese' && optionText !== 'D.Cheese') {
       // if the current option is not Cheese or D.cheese, return from the function
-      setExtras((prev) => [...prev, option]);
-      const option = burger.extraOptions.find((o) => o.text === optionText);
-    const OptionChecked = otherOption ? document.getElementById(option.text).checked : true;
-      if (OptionChecked){
+      const checked = e.target.checked;
+      if (checked){
         changeprice(-option.price);
-      }else{
-        changeprice(option.price);
-      }
-      
+        setExtras(extras.filter((extra) => extra._id !== otherOption._id));
+        setExtras((prev) => [...prev, option]);
+      }else
+      changeprice(option.price);
+      setExtras((prev) => [...prev, option]);
       return;
     }
   
