@@ -145,6 +145,7 @@ table.orders-table tbody tr {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    padding: 10px;
   }
   .imgTd{
       display:flex;
