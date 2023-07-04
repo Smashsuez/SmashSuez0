@@ -49,11 +49,9 @@ const Product = ({ burger }) => {
       if (checked){
       changeprice(option.price);
       setExtras((prev) => [...prev, option]);
-      
       }else{
       setExtras(extras.filter((extra) => extra._id !== option._id));
       setPrice(price - option.price);
-      setExtras((prev) => [...prev, option]);}
       return;
     }
   
