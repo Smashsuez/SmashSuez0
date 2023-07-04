@@ -47,8 +47,8 @@ const Navbar = () => {
         <div className={styles.item}>
           <div className={styles.mid}>
             <ul className={styles.list}>
-              <li className={styles.listItem}>
-                <Link href="/" passHref>
+              <li  >
+                <Link className={styles.listItem} href="/" passHref>
                   <a>Homepage</a>
                 </Link>
               </li>
