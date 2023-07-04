@@ -50,9 +50,10 @@ const Product = ({ burger }) => {
       changeprice(option.price);
       setExtras((prev) => [...prev, option]);
       }else{
+      setExtras((prev) => prev.filter((extra) => extra._id !== option._id));
       setExtras(extras.filter((extra) => extra._id !== option._id));
       setPrice(price - option.price);
-      setExtras((prev) => prev.filter((extra) => extra._id !== option._id));
+      
       setExtras((prev) => [...prev, option]);}
       return;
     }
