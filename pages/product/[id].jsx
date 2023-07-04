@@ -52,6 +52,8 @@ const Product = ({ burger }) => {
       }else{
       setExtras(extras.filter((extra) => extra._id !== option._id));
       setPrice(price - option.price);
+      setExtras((prev) => prev.filter((extra) => extra._id !== option._id));
+      setExtras((prev) => [...prev, option]);}
       return;
     }
   
@@ -64,7 +66,7 @@ const Product = ({ burger }) => {
       if (otherOptionChecked) {
         // if the other option is already checked, uncheck it and deduct its price from the total
         document.getElementById(otherOption.text).checked  = false;
-        
+        setExtras((prev) => prev.filter((extra) => extra._id !== otherOption._id));
         setPrice(price - otherOption.price + option.price);
         console.log("dwc");
         setExtras(extras.filter((extra) => extra._id !== otherOption._id));
