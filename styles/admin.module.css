@@ -108,6 +108,10 @@ table.orders-table tbody tr {
     align-items: center;
   } 
 
+  #product{
+    background-color: aliceblue;
+  }
+
   .table {
     display: flex;
     flex-direction: column;

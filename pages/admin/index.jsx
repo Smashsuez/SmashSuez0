@@ -56,7 +56,7 @@ const Index = ({ orders, products }) => {
         {/* <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link> */}
         <meta charSet='utf-8' />
       </Head>
-      <div className={styles.item}>
+      <div className={styles.item} id={styles.product}>
         <h1 className={styles.title}>Products</h1>
         <table className={styles.table}>
           <thead>
