@@ -54,7 +54,8 @@ const Product = ({ burger }) => {
       setExtras(extras.filter((extra) => extra._id !== option._id));
       setPrice(price - option.price);
       
-      setExtras((prev) => [...prev, option]);}
+      //setExtras((prev) => [...prev, option]);
+    }
       return;
     }
   
@@ -80,7 +81,7 @@ const Product = ({ burger }) => {
       // remove the current option from extras and deduct its price from the total
       setExtras(extras.filter((extra) => extra._id !== option._id));
       setPrice(price - option.price);
-      setExtras((prev) => [...prev, option]);
+      // setExtras((prev) => [...prev, option]);
     }
   };
   
