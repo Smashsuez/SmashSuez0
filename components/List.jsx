@@ -6,7 +6,7 @@ import Aos from 'aos'
 
 const List = ({list}) => {
   return (
-    <div className={styles.container} id='menu'>
+    <div className={styles.container} id='Menu'>
         <div className={styles.heading}>
           <span className={styles.title}>Our Menu</span>
         </div>
