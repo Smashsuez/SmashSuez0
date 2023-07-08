@@ -40,8 +40,9 @@ const Navbar = () => {
     //     element.scrollIntoView({ behavior: "smooth" });
     //   }
     // }, 4000);
-    const element = document.getElementById(id);
+    
     setTimeout(() => {
+      const element = document.getElementById(id);
       element.scrollIntoView({ behavior: "smooth" });
     }, 4000);}
      // Wait for 2 seconds before redirecting and attempting to scroll to the component
