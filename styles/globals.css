@@ -222,6 +222,7 @@ nav::after{
   line-height: 1.5;
   position: relative;
   transition: all 0.2s;
+  color: aliceblue;
 }
 
 .link:hover{
