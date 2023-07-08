@@ -2,7 +2,7 @@ import React, { Fragment ,useState, useEffect } from "react";
 import styles from "../styles/Navbar.module.css";
 import Image from 'next/image';
 import { useSelector } from "react-redux";
-import Link from "next/link";
+import { Link} from 'react-scroll'
 // import SmoothScroll from "smooth-scroll";
 
 
@@ -73,7 +73,7 @@ const Navbar = () => {
             <li className={styles.listItem}>Homepage</li></Link>
             <Link href="/#menu" passHref><li className={styles.listItem} onClick={() => handleScrollTo("menu")}>Menu</li></Link>
             
-            <Link href="/#location" passHref><li className={styles.listItem} onClick={() => handleScrollTo("location")}>Location</li></Link>
+            <Link to="test1" spy={true} smooth={true} offset={50} duration={500}><li className={styles.listItem} onClick={() => handleScrollTo("location")}>Location</li></Link>
             
           </ul></div>
         </div>
