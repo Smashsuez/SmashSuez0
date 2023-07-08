@@ -15,7 +15,7 @@
     z-index: 999;
     
 }
-.container.active{
+.container.activeBar{
     position: fixed;
     display: flex;
     align-items: center;
