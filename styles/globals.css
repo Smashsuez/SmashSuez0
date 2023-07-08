@@ -77,6 +77,7 @@ nav::after{
   cursor: pointer;
   width: 40px;
   height: 60px;
+  border-right: 1px solid white;
 }
 .menu div{
   width: 20px;

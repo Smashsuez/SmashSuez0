@@ -71,17 +71,6 @@ const toggleNavActive = () => {
         <div className={styles.logo}>
           <Image src="/imgs/WhatsApp Image 2023-06-12 azzzzzzzzzzzzzzzzzzzzzzzt 22.50.49.png" width="120" height="90" alt=""/>
         </div></Link>
-        <div className={styles.item}>
-          <div className={styles.mid}>
-          <ul className={styles.list}>
-            <Link href="/" passHref>
-            <li className={styles.listItem}>Homepage</li></Link>
-            <Link href="/#menu" passHref><li className={styles.listItem} onClick={() => handleScrollTo("menu")}>Menu</li></Link>
-            
-            <Link href="/#location" passHref><li className={styles.listItem} onClick={() => handleScrollTo("location")}>Location</li></Link>
-            
-          </ul></div>
-        </div>
         <div className="x">
         <div onClick={toggleNavActive} className={`menu ${navActive ? "openmenu" : ""}`}>
           <span className="line-1"></span>
