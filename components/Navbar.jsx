@@ -2,7 +2,7 @@ import React, { Fragment ,useState, useEffect } from "react";
 import styles from "../styles/Navbar.module.css";
 import Image from 'next/image';
 import { useSelector } from "react-redux";
-import { Link} from 'react-scroll'
+import { Link} from "react-scroll"
 // import SmoothScroll from "smooth-scroll";
 
 
