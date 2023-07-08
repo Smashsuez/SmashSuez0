@@ -119,8 +119,9 @@
   
   @media screen and (min-width: 769px) {
     .container {
-      height: 100px;
-      padding: 0 50px;
+      padding: 0 20px 0 0;
+      height: 70px;
+  
      
     }
     .logo {
