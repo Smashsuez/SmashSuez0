@@ -14,7 +14,6 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({list, admin}) {
   const [close, setClose] = useState(true);
-  
 
   return (
     <>
@@ -28,7 +27,7 @@ export default function Home({list, admin}) {
       </Head>
       <Landing />
       {admin && <AddButton setClose={setClose}/> }
-      <List list={list} id={menu}/>
+      <List list={list} />
       {!close && <Add setClose={setClose}/> }
       <Location />
       {/* <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
