@@ -28,7 +28,7 @@ header{
     -webkit-box-shadow: 0 0 10px #bbb;
     -moz-box-shadow: 0 0 10px #bbb;
     color: red;
-    background-color:  coral;
+    background-color:  #1f285c;
     position:fixed;
     width: 100vw;
 }
@@ -61,6 +61,10 @@ nav::after{
   background:  rgba(255,255,255,.3);
 }
 
+.x{
+  display: flex;
+
+}
 
 .menu{
   display: flex;
