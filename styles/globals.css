@@ -132,7 +132,7 @@ nav::after{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 100px);
   position: fixed;
   top: 70px;
   width: 288px;
