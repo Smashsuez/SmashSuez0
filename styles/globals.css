@@ -114,7 +114,7 @@ nav::after{
 .menu .line-3 {
   width: 50%;
   left: auto;
-  right: -5;
+  right: -5px;
   transform: translate(0, 8px);
 }
 
