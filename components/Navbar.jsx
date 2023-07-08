@@ -31,7 +31,7 @@ const Navbar = () => {
   if (element) {
     setTimeout(() => {
       element.scrollIntoView({ behavior: "smooth" });
-    }, 1000); // Wait for 1 second before scrolling to the component
+    }, 2500); // Wait for 1 second before scrolling to the component
   } else {
     window.location.href = "/";
     setTimeout(() => {
