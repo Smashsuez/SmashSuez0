@@ -11,20 +11,20 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [transitionNavbar, setTransitionNavbar] = useState(false);
   const [navActive, setNavActive] = useState(false);
-  // const changeBackground = () => {
-  //   if (window.scrollY >= 100) {
-  //     setTransitionNavbar(true);
-  //   } else {
-  //     setTransitionNavbar(false);
-  //   }
-  // };
+  const changeBackground = () => {
+    if (window.scrollY >= 100) {
+      setTransitionNavbar(true);
+    } else {
+      setTransitionNavbar(false);
+    }
+  };
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", changeBackground);
-  //   return () => {
-  //     window.removeEventListener("scroll", changeBackground);
-  //   };
-  // }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
 
 //  const handleScrollTo = (id) => {
 //   const element = document.getElementById(id);
@@ -79,10 +79,10 @@ const toggleNavActivee = () => {
           <span className="line-2"></span>
           <span className="line-3"></span>
         </div>
-        <div  className={`link ${navActive ? "openmenu" : ""}`}>
+        <div className={`nav__menu-list ${navActive ? "active" : ""}`}>
           <div className="linkContainer">
             <div className={`link ${navActive ? "openmenu" : ""}`}>
-              <div className="linkInner" onClick={toggleNavActivee}>
+              <div className="linkInner">
                 <Link legacyBehavior href={"/"} onClick={toggleNavActivee}>
                   <a>Home</a>
                 </Link>
