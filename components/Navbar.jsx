@@ -11,20 +11,20 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [transitionNavbar, setTransitionNavbar] = useState(false);
   const [navActive, setNavActive] = useState(false);
-  const changeBackground = () => {
-    if (window.scrollY >= 100) {
-      setTransitionNavbar(true);
-    } else {
-      setTransitionNavbar(false);
-    }
-  };
+  // const changeBackground = () => {
+  //   if (window.scrollY >= 100) {
+  //     setTransitionNavbar(true);
+  //   } else {
+  //     setTransitionNavbar(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
-    return () => {
-      window.removeEventListener("scroll", changeBackground);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", changeBackground);
+  //   return () => {
+  //     window.removeEventListener("scroll", changeBackground);
+  //   };
+  // }, []);
 
 //  const handleScrollTo = (id) => {
 //   const element = document.getElementById(id);
@@ -68,7 +68,7 @@ const toggleNavActivee = () => {
   return (
     <Fragment >
     
-      <div className={transitionNavbar ? `${styles.container} ${styles.active}` : styles.container}>
+      <div className={ styles.container}>
       <Link href="/" passHref>
         <div className={styles.logo}>
           <Image src="/imgs/WhatsApp Image 2023-06-12 azzzzzzzzzzzzzzzzzzzzzzzt 22.50.49.png" width="120" height="90" alt=""/>
