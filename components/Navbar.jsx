@@ -57,6 +57,11 @@ const Navbar = () => {
 //   const scroll = new SmoothScroll('a[href*="#"]', {
 //     speed: 300
 // });
+const [navActive, setNavActive] = useState(false);
+
+const toggleNavActive = () => {
+  setNavActive(!navActive);
+};
 
   return (
     <Fragment >
