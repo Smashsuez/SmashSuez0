@@ -33,7 +33,7 @@ const Navbar = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }, 500); // Wait for 1 second before scrolling to the component
   } else {
-    // window.location.href = "/";
+    window.location.href = "/";
     // setTimeout(() => {
     //   const element = document.getElementById(id);
     //   if (element) {
