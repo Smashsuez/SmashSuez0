@@ -39,7 +39,7 @@ const Navbar = () => {
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
-    }, 2000); // Wait for 2 seconds before redirecting and attempting to scroll to the component
+    }, 3500); // Wait for 2 seconds before redirecting and attempting to scroll to the component
   }
 };
 
