@@ -6,7 +6,7 @@ import Link from "next/link";
 // import SmoothScroll from "smooth-scroll";
 
 
-const Navbar = () => {
+const Navbar = (handleScrollTo) => {
   const quantity = useSelector((state) => state.cart.quantity);
   const [showMenu, setShowMenu] = useState(false);
   const [transitionNavbar, setTransitionNavbar] = useState(false);
@@ -26,21 +26,7 @@ const Navbar = () => {
     };
   }, []);
 
-  const handleScrollTo = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      // Wait for 1 second before scrolling to the component
-    } else {
-      window.location.href = "/";
-      setTimeout(() => {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 2000); // Wait for 2 seconds before redirecting and attempting to scroll to the component
-    }
-  };
+  
   
   
   
