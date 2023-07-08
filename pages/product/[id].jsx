@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { addProduct } from '@/redux/cartSlicelatest';
 import Head from 'next/head'
+import Link from 'next/link';
 
 
 const Product = ({ burger }) => {
