@@ -28,7 +28,7 @@ export default function Home({list, admin}) {
       </Head>
       <Landing />
       {admin && <AddButton setClose={setClose}/> }
-      <List list={list} />
+      <List list={list} id={menu}/>
       {!close && <Add setClose={setClose}/> }
       <Location />
       {/* <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
