@@ -10,7 +10,7 @@ const Navbar = () => {
   const quantity = useSelector((state) => state.cart.quantity);
   const [showMenu, setShowMenu] = useState(false);
   const [transitionNavbar, setTransitionNavbar] = useState(false);
-
+  const [navActive, setNavActive] = useState(false);
   const changeBackground = () => {
     if (window.scrollY >= 100) {
       setTransitionNavbar(true);
@@ -57,7 +57,7 @@ const Navbar = () => {
 //   const scroll = new SmoothScroll('a[href*="#"]', {
 //     speed: 300
 // });
-const [navActive, setNavActive] = useState(false);
+
 
 const toggleNavActive = () => {
   setNavActive(!navActive);
