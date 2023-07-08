@@ -33,7 +33,7 @@ const Navbar = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }, 500); // Wait for 1 second before scrolling to the component
   } else {
-    window.location.href = "/";
+   // window.location.href = "/";
     // setTimeout(() => {
     //   const element = document.getElementById(id);
     //   if (element) {
@@ -71,9 +71,9 @@ const Navbar = () => {
           <ul className={styles.list}>
             <Link href="/" passHref>
             <li className={styles.listItem}>Homepage</li></Link>
-            <Link href="" passHref><li className={styles.listItem} onClick={() => handleScrollTo("menu")}>Menu</li></Link>
+            <Link href="/" passHref><li className={styles.listItem} onClick={() => handleScrollTo("menu")}>Menu</li></Link>
             
-            <Link href="" passHref><li className={styles.listItem} onClick={() => handleScrollTo("location")}>Location</li></Link>
+            <Link href="/" passHref><li className={styles.listItem} onClick={() => handleScrollTo("location")}>Location</li></Link>
             
           </ul></div>
         </div>
