@@ -82,7 +82,7 @@ const toggleNavActive = () => {
             
           </ul></div>
         </div>
-        <div className="menu">
+        <div className="x">
         <div onClick={toggleNavActive} className={`menu ${navActive ? "openmenu" : ""}`}>
           <span className="line-1"></span>
           <span className="line-2"></span>
