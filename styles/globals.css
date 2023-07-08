@@ -179,7 +179,10 @@ nav::after{
   animation: slideIn 3s forwards;
 }
 
-
+.linkInner a {
+  color: aliceblue;
+  text-decoration: solid #1f285c;
+}
 
  /* .linkInner{
   opacity: 0;
