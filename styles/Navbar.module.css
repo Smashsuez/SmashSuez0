@@ -15,7 +15,7 @@
     z-index: 999;
     
 }
-.container.activeBar{
+.container.active{
     position: fixed;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@
     z-index: 990;
     box-shadow: 0 3px 16px 0 rgb(0, 0, 0 / 10%) ;
     background-color: #1f285c;
-    /* transform: translateY(70px); */
+    transform: translateY(70px);
     transition: transform 1s ease;
 }
 
@@ -99,8 +99,8 @@
 }
 @media screen and (max-width: 768px) {
     .container {
-      height: 100px;
-      padding: 0 20px;
+      padding: 0 20px 0 0;
+      height: 70px;
       overflow:hidden;
     }
     .logo {
@@ -119,10 +119,8 @@
   
   @media screen and (min-width: 769px) {
     .container {
-      padding: 0 20px 0 0;
-      height: 70px;
-  
-     
+      height: 100px;
+      padding: 0 50px;
     }
     .logo {
       width: 120px;
