@@ -18,10 +18,25 @@ function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.refresh()
   }, [])
+  const handleScrollTo = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      return;
+    } else {
+      window.location.href = "/";
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 2000); // Wait for 2 seconds before redirecting and attempting to scroll to the component
+    }
+  };
   return (
     <Provider store={store}>
     <Layout>
-      <Component {...pageProps} />
+      <Component {...pageProps} handleScrollTo={handleScrollTo}/>
     </Layout>
     </Provider>
   );

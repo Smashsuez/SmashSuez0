@@ -14,6 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({list, admin}) {
   const [close, setClose] = useState(true);
+  
 
   return (
     <>
