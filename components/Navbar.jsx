@@ -62,7 +62,9 @@ const [navActive, setNavActive] = useState(false);
 const toggleNavActive = () => {
   setNavActive(!navActive);
 };
-
+const toggleNavActivee = () => {
+  setNavActive(false);
+};
   return (
     <Fragment >
     
@@ -81,28 +83,28 @@ const toggleNavActive = () => {
           <div className="linkContainer">
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/"} onClick={setNavActive(false)}>
+                <Link legacyBehavior href={"/"} onClick={toggleNavActivee}>
                   <a>Home</a>
                 </Link>
               </div>
             </div>
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/#menu"} onClick={setNavActive(false)}>
+                <Link legacyBehavior href={"/#menu"} onClick={toggleNavActivee}>
                   <a>Menu</a>
                 </Link>
               </div>
             </div>
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/#location"} onClick={setNavActive(false)}>
+                <Link legacyBehavior href={"/#location"} onClick={toggleNavActivee}>
                   <a>Location</a>
                 </Link>
               </div>
             </div>
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/cart"}  onClick={setNavActive(false)}>
+                <Link legacyBehavior href={"/cart"}  onClick={toggleNavActivee}>
                   <a>Cart</a>
                 </Link>
               </div>
