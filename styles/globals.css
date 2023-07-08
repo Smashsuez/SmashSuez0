@@ -63,7 +63,12 @@ nav::after{
 
 .x{
   display: flex;
-
+  position: relative;
+  height: 40px;
+  align-items: center;
+  width: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu{
@@ -77,7 +82,8 @@ nav::after{
   cursor: pointer;
   width: 40px;
   height: 60px;
-  border-right: 1px solid white;
+  border-left: 1px solid white;
+  padding-left: 10x;
 }
 .menu div{
   width: 20px;
