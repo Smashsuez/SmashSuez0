@@ -81,28 +81,28 @@ const toggleNavActive = () => {
           <div className="linkContainer">
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/"}>
+                <Link legacyBehavior href="/">
                   <a>Home</a>
                 </Link>
               </div>
             </div>
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/"}>
+                <Link legacyBehavior href="/">
                   <a>Menu</a>
                 </Link>
               </div>
             </div>
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/"}>
+                <Link legacyBehavior href="/">
                   <a>Location</a>
                 </Link>
               </div>
             </div>
             <div className={`link ${navActive ? "openmenu" : ""}`}>
               <div className="linkInner">
-                <Link legacyBehavior href={"/cart"} >
+                <Link legacyBehavior href="/cart" >
                   <a>Cart</a>
                 </Link>
               </div>
