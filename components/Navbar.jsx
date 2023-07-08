@@ -68,7 +68,7 @@ const toggleNavActivee = () => {
   return (
     <Fragment >
     
-      <div className={ styles.container}>
+      <div className={`${styles.container} ${transitionNavbar ? styles.activeBar : ''}`}>
       <Link href="/" passHref>
         <div className={styles.logo}>
           <Image src="/imgs/WhatsApp Image 2023-06-12 azzzzzzzzzzzzzzzzzzzzzzzt 22.50.49.png" width="120" height="90" alt=""/>
