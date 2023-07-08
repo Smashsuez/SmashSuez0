@@ -27,7 +27,7 @@
     z-index: 990;
     box-shadow: 0 3px 16px 0 rgb(0, 0, 0 / 10%) ;
     background-color: #1f285c;
-    transform: translateY(70px);
+    /* transform: translateY(70px); */
     transition: transform 1s ease;
 }
 
