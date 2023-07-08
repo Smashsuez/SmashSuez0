@@ -101,7 +101,7 @@ nav::after{
   display: block;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 65%;
   transform: translate(-50%, -50%);
   transition: transform 0.5s, width 0.5s, background-color 0.5s;
 }
