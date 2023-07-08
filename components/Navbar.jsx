@@ -79,10 +79,10 @@ const toggleNavActivee = () => {
           <span className="line-2"></span>
           <span className="line-3"></span>
         </div>
-        <div className={`nav__menu-list ${navActive ? "active" : ""}`}>
+        <div  className={`link ${navActive ? "openmenu" : ""}`}>
           <div className="linkContainer">
             <div className={`link ${navActive ? "openmenu" : ""}`}>
-              <div className="linkInner">
+              <div className="linkInner" onClick={toggleNavActivee}>
                 <Link legacyBehavior href={"/"} onClick={toggleNavActivee}>
                   <a>Home</a>
                 </Link>
