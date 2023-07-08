@@ -28,19 +28,19 @@ const Navbar = () => {
 
  const handleScrollTo = (id) => {
   const element = document.getElementById(id);
-  // if (element) {
+  if (element) {
     setTimeout(() => {
       element.scrollIntoView({ behavior: "smooth" });
     }, 1000); // Wait for 1 second before scrolling to the component
-  // } else {
-  //   window.location.href = "/";
-  //   setTimeout(() => {
-  //     const element = document.getElementById(id);
-  //     if (element) {
-  //       element.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   }, 3500); // Wait for 2 seconds before redirecting and attempting to scroll to the component
-  // }
+  } else {
+    window.location.href = "/";
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 4000); // Wait for 2 seconds before redirecting and attempting to scroll to the component
+  }
 };
 
   
