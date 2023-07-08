@@ -3,3 +3,375 @@
   margin: 0;
   padding: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+header{
+  position: sticky;
+  z-index: 30;
+  height:fit-content;
+  overflow: hidden;
+  top: 0;
+  /* background: linear-gradient(to bottom right, #f05a28, #3399ff); */
+  background-color:  transparent;
+    max-width: 100%;
+    box-shadow: 0 0 10px #bbb;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px #bbb;
+    -moz-box-shadow: 0 0 10px #bbb;
+    color: red;
+    background-color:  #feca04;
+    position:fixed;
+    width: 100vw;
+}
+nav{
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* background-color: #f1f1f1; */
+  width: 100%;
+  text-align: center;
+  position: relative; 
+  height: 70px;
+  padding-left: 24px;
+}
+
+nav::after{
+  content: "";
+  position: absolute;
+  border-radius: 6px;
+  
+  left: 50%;
+  transform: translateX(-50%);  
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 98%;
+  z-index: -1;
+  height: 95%;
+  background:  rgba(255,255,255,.3);
+}
+
+.logo{
+  position: relative;
+  z-index: 9999;
+  color: red;
+  font-family: monospace;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu{
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  flex-direction: column;
+  justify-content:baseline;
+  row-gap: 6px;
+  right: 2%;
+  cursor: pointer;
+  width: 40px;
+  height: 60px;
+}
+.menu div{
+  width: 20px;
+  height: 100%;
+  position: relative;
+  margin:5px;
+
+}
+
+.menu span {
+  background: red;
+    width: 100%;
+  height: 0.1em;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.5s, width 0.5s, background-color 0.5s;
+}
+
+.menu .line-1 {
+  width: 50%;
+  transform: translate(-100%, -10px);
+}
+
+.menu .line-3 {
+  width: 50%;
+  left: auto;
+  right: 0;
+  transform: translate(0, 8px);
+}
+
+.openmenu .line-1 {
+  transform: translate(-50%, -50%) rotate(0);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.openmenu .line-2 {
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.openmenu .line-3 {
+  transform: translate(-50%, -50%) rotate(0);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.nav__menu-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 70px;
+  width: 288px;
+  row-gap: 24px;
+  right: -100%;
+  padding: 24px 16px;
+  transition: all 0.8s;
+  min-height: 100%;
+  /* background: linear-gradient(to bottom right, #f05a28, #3399ff); */
+  background-color:transparent;
+    width: 100%;
+    backdrop-filter:blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 100%;
+  z-index: -1;
+  height: calc(100vh - 60px);
+  background:  #feca04;
+    
+}
+.linkContainer{
+  height: 100vh;
+    width: 100vw;
+    
+    text-align: center;
+    position: relative; 
+    top: 0;
+
+}
+
+
+.link{
+  overflow: hidden;
+  position: relative;
+}
+
+.linkInner {
+  opacity: 0;
+  position: relative;
+  top: 55px;
+  animation-delay: 2s;
+}
+
+.openmenu .linkInner {
+  animation-delay: 2s;
+  animation: slideIn 3s forwards;
+}
+
+
+
+ /* .linkInner{
+  opacity: 0;
+  position: relative;
+  top:55px;
+} */
+
+.side{
+  content: "";
+    position: absolute;
+    border-radius: 6px;
+    left: 20%;
+    transform: translate(-50%); 
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 33.33%;
+    z-index: 0;
+    height: 85vh;
+    background: linear-gradient(135deg, rgba(255,255,255,.2), rgba(255,255,255,0));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    padding-left: 30px;
+  } 
+
+  .itemTitle{
+    font-weight: 700;
+    font-size: 19px;
+  }
+
+
+.nav__menu-list.active{
+  right: 0;
+  width: 100vw;
+  text-align: center;
+}
+.link{
+  font-size: 50px; 
+  line-height: 1.5;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.link:hover{
+ font-weight: bold;
+}
+
+.center{
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  }
+.switchContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  position: absolute;
+  right: 90px;
+  top: 34%;
+  
+}
+
+.btn{
+  position: relative;
+  height: 56px;
+  color: #111;
+  display: flex;
+  align-items: center;
+}
+
+.btn input{
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  font-family: "Raleway";
+  font-weight: bold;
+  box-shadow: 1px 6px 11px #000000;
+}
+
+.btn input::before,
+.btn input::after{
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #111;
+  font-family: 'Arvo', serif;
+font-family: 'Montserrat', sans-serif;
+}
+
+.btn input::before{
+  content: "EN";
+  left: 40px;
+}
+
+.btn input::after{
+  content: "AR";
+  right: 40px;
+}
+
+.btn label{
+  z-index: 1;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  border-radius: 20px;
+}
+
+.btn.btn-1 input{
+  transition: .2s -0.1s;
+}
+
+.btn.btn-1 input:checked{
+  background: red;
+
+}
+
+.btn.btn-1:checked.btn-1:checked::before{
+  color: #111;
+  transition: color .5s .2s;
+}
+
+.btn.btn-1:checked.btn-1:checked::after{
+  color: #111;
+  transition: color .5s .2s;
+}
+
+.btn.btn-1 input:checked + label{
+  left: 10px;
+  right: 100px;
+  background: #fff;
+  transition: left .5s, right  .4s .2s;
+}
+
+.btn.btn-1 input:not(:checked){
+  background: #fff;
+  transition: background .5s -0.1s;
+}
+
+.btn.btn-1 input:not(:checked)::before{
+  color: #111;
+  transform: color .5s;
+}
+
+.btn.btn-1 input:not(:checked)::after{
+  color: #1e1e1e;
+  transform: color .5s;
+}
+
+.btn.btn-1 input:not(:checked) + label{
+  left: 100px;
+  right: 10px;
+  background: red;
+  transition: left .4s .2s, right .5s, background .35s -0.1s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    top:55px;
+  }
+  to {
+    opacity: 1;
+    top:0;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .linkContainer{
+    flex-direction: column;
+  }
+  .side{
+    display: none;
+  }
+  .switchContainer{
+    position: static;
+    
+  }
+  .nav__menu-list{
+    padding: 0;
+  }
+}

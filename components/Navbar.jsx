@@ -77,6 +77,46 @@ const Navbar = () => {
             
           </ul></div>
         </div>
+        <div className="menu">
+        <div onClick={toggleNavActive} className={`menu ${navActive ? "openmenu" : ""}`}>
+          <span className="line-1"></span>
+          <span className="line-2"></span>
+          <span className="line-3"></span>
+        </div>
+        <div className={`nav__menu-list ${navActive ? "active" : ""}`}>
+          <div className="linkContainer">
+            <div className={`link ${navActive ? "openmenu" : ""}`}>
+              <div className="linkInner">
+                <Link legacyBehavior href={"/"}>
+                  <a>Home</a>
+                </Link>
+              </div>
+            </div>
+            <div className={`link ${navActive ? "openmenu" : ""}`}>
+              <div className="linkInner">
+                <Link legacyBehavior href={"/#menu"}>
+                  <a>Menu</a>
+                </Link>
+              </div>
+            </div>
+            <div className={`link ${navActive ? "openmenu" : ""}`}>
+              <div className="linkInner">
+                <Link legacyBehavior href={"/#location"}>
+                  <a>Location</a>
+                </Link>
+              </div>
+            </div>
+            <div className={`link ${navActive ? "openmenu" : ""}`}>
+              <div className="linkInner">
+                <Link legacyBehavior href={"/cart"} >
+                  <a>Cart</a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div>
         <Link href="/cart" passHref>
         <div className={styles.item}>
         <div className={styles.cart}>
@@ -84,7 +124,7 @@ const Navbar = () => {
             <div className={styles.counter}>{quantity}</div>
           </div>
         </div>
-        </Link>
+        </Link></div>
       </div>
       
       </Fragment>
