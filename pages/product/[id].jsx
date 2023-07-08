@@ -157,7 +157,7 @@ const Product = ({ burger }) => {
           <button className={styles.button} onClick={handleClick}>
             Add to Cart
           </button>
-          <button href="/#menu" className={styles.button} onClick={handleClick}>
+          <button href="/#menu" className={styles.button} >
             Menu
           </button>
         </div>
