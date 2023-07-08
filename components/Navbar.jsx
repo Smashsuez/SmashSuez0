@@ -73,7 +73,7 @@ const Navbar = () => {
             <li className={styles.listItem}>Homepage</li></Link>
             <Link href="/#menu" passHref><li className={styles.listItem} onClick={() => handleScrollTo("menu")}>Menu</li></Link>
             
-            <Link href="/" passHref><li className={styles.listItem} onClick={() => handleScrollTo("location")}>Location</li></Link>
+            <Link href="/#location" passHref><li className={styles.listItem} onClick={() => handleScrollTo("location")}>Location</li></Link>
             
           </ul></div>
         </div>
