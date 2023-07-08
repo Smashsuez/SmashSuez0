@@ -109,7 +109,8 @@ const toggleNavActive = () => {
             </div>
           </div>
         </div>
-        </div>
+        
+        
         <div>
         <Link href="/cart" passHref>
         <div className={styles.item}>
@@ -119,6 +120,7 @@ const toggleNavActive = () => {
           </div>
         </div>
         </Link></div>
+        </div>
       </div>
       
       </Fragment>
