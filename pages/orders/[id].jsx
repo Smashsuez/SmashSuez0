@@ -2,9 +2,12 @@ import styles from "../../styles/order.module.css";
 import Image from "next/image";
 import axios from "axios";
 import Head from 'next/head'
+import Powered from "@/components/Poweredlatest";
 
 const Order = ({ order }) => {
   return (
+  <>
+  <Powered/>
     <div className={styles.container}>
       <Head>
         <title>Smash Burger</title>
@@ -73,7 +76,7 @@ const Order = ({ order }) => {
           </button>
         </div>
       </div>
-    </div>
+    </div></>
   );
 };
 

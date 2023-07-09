@@ -7,6 +7,7 @@ import axios from 'axios';
 import { useRouter } from "next/router";
 import OrderDetail from "../components/OrderDetail";
 import Head from 'next/head'
+import Powered from '@/components/Poweredlatest';
 
 
 const Cart = () =>{
@@ -36,7 +37,8 @@ const Cart = () =>{
 
   
   return (
-    
+    <>
+    <Powered/>
     <div className={styles.container}>
       <Head>
         <title>Smash Burger</title>
@@ -136,7 +138,7 @@ const Cart = () =>{
 
 
               </div>
-              
+              </>
 
   );
 };

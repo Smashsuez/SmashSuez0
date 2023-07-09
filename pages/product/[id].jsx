@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import { addProduct } from '@/redux/cartSlicelatest';
 import Head from 'next/head'
 import Link from 'next/link';
+import Powered from '@/components/Poweredlatest';
 
 
 const Product = ({ burger }) => {
@@ -98,7 +99,8 @@ const Product = ({ burger }) => {
 
 
   return (
-    
+    <>
+    <Powered/>
     <div className={styles.container}>
       <Head>
         <title>Smash Burger</title>
@@ -170,7 +172,7 @@ const Product = ({ burger }) => {
   </div>
 )}
 
-    </div>
+    </div></>
   )
                 }
 
