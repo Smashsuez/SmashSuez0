@@ -23,16 +23,5 @@
         border: 1px solid coral;
     }
 
-    /* .me{
-        font-weight:bold;
-    } */
 }
-
-@media screen and (max-width: 500px){
-    .me{
-        width:300px;
-        text-align:center;
-    }
-}
-
 
