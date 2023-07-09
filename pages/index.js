@@ -7,6 +7,7 @@ import axios from "axios";
 import { useState } from 'react';
 import Add from '../components/Add';
 import AddButton from '../components/AddButton';
+import Powered from '@/components/Poweredlatest';
 
 
 
@@ -26,6 +27,7 @@ export default function Home({list, admin}) {
         <meta charSet='utf-8' />
       </Head>
       <Landing />
+      <Powered/>
       {admin && <AddButton setClose={setClose}/> }
       <List list={list} />
       {!close && <Add setClose={setClose}/> }
