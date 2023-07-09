@@ -259,13 +259,7 @@
     }
 
 
-    .title{
-        display: inline-block;
-       max-width: 80vw;
-    margin: 0px;
-    font-size: 26px;
-    
-    }
+   
 
     .title,
     .description{
@@ -273,6 +267,12 @@
         color:aliceblue;
         font-weight:bold;
         /* margin-right: 0px;*/
+    } .title{
+        display: inline-block;
+       max-width: 80vw;
+    margin: 0px;
+    font-size: 26px;
+    
     }
 
     .description{
