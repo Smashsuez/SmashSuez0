@@ -1,7 +1,6 @@
 import Layout from '../components/Layout'
 import '/styles/globals.css'
 import { useEffect } from "react";
-import "bootstrap/dist/css/bootstrap.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Provider } from 'react-redux';
