@@ -267,7 +267,9 @@
         color:aliceblue;
         font-weight:bold;
         /* margin-right: 0px;*/
-    } .title{
+    } 
+    .titleH1,
+    .title{
         display: inline-block;
     margin: 0px;
     max-width: 80vw;
