@@ -7,7 +7,7 @@ const Powered = () => {
   return (
     <>
     <Link href="https://wa.me/message/OBPWMQHNZ5EBL1" passHref>
-    <div className={styles.container}>Powered By Coder <Image alt='' src={"/imgs/Coder.png"} width={60} height={40}/></div>
+    <div className={styles.container}>Powered By Coder <Image alt='' src={"/imgs/Coder.png"} width={50} height={30} className={styles.image}/></div>
     </Link>
     </>
   )
