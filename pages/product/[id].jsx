@@ -159,9 +159,9 @@ const Product = ({ burger }) => {
           />
           <button className={styles.button} onClick={handleClick}>
             Add to Cart
-          </button>
+          </button><br/>
           <Link href="/#menu" passHref>
-          <button className={styles.button} >
+          <button className={styles.buttonTwo} >
             Menu
           </button></Link>
         </div>
