@@ -269,9 +269,11 @@
         /* margin-right: 0px;*/
     } .title{
         display: inline-block;
-       max-width: 80vw;
     margin: 0px;
-    font-size: 26px;
+    max-width: 80vw;
+    font-size: 30px;
+    height: 105px;
+}
     
     }
 

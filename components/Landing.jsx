@@ -16,7 +16,7 @@ const Landing = () => {
             <div className={styles.container}>
                 <div className={styles.text}>
                     <div className={styles.title}>
-                        <h1 style={{ width: "100vw" }}>SMASH BURGER,
+                        <h1>SMASH BURGER,
                             <Typewriter
                                 options={{
                                     strings: ['Burgers with a difference.', 'Try our Smash Burger.'],
