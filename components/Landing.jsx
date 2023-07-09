@@ -16,7 +16,7 @@ const Landing = () => {
             <div className={styles.container}>
                 <div className={styles.text}>
                     <div className={styles.title}>
-                        <h1>SMASH BURGER,
+                        <h1 className={styles.titleH1}>SMASH BURGER,
                             <Typewriter
                                 options={{
                                     strings: ['Burgers with a difference.', 'Try our Smash Burger.'],
