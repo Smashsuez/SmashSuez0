@@ -10,6 +10,10 @@
   box-sizing: border-box;
   font-family: 'Work Sans', sans-serif;
 }
+html{
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
 a{
   text-decoration: none;
   color: inherit;
