@@ -177,7 +177,7 @@ const Product = ({ burger }) => {
                 }
 
 export const getServerSideProps = async ({params}) =>{
-    const res = await axios.get(`https://smash-suez0.vercel.app/api/products/${params.id}`);
+    const res = await axios.get(`https://small-res-coder-elzvq6ejs-smashsuez.vercel.app/api/products/${params.id}`);
     return{
       props:{
         burger: res.data,
